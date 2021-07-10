@@ -1,1 +1,56 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <title>MyToDo</title>
+</head>
+
+<body>
+    <div id="top">
+        <div id="top__left">
+            <span id="top__left__city"></span>
+            <span id="top__left__temp"></span>
+            <span id="top__left__weather"></span>
+        </div>
+        <div id="top__right">
+            <span id="top__right__label">이름을 등록해주세요. 👉</span>
+            <form id="top__right__form" class="hidden">
+                <input type="text" id="top__right__inputnm">
+                <input type="submit" id="top__right__loginBtn" value="확인" />
+            </form>
+            <button id="top__right__resetBtn" class="hidden">초기화</button>
+        </div>
+    </div>
+    <div id="container">
+        <div id="container__clock">
+            <span id="container__clock__hour"></span>
+            <span id="container__clock__minute"></span>
+            <span id="container__clock__second"></span>
+            <span id="container__clock__ampm"></span>
+        </div>
+        <div id="container__todo">
+            <div id="container__todo__title">
+                오늘은 무엇을 할까요?
+            </div>
+            <form id="container__todo__form">
+                <input id="container__todo__input" type="text" placeholder="할 일을 적어주세요.">
+                <input type="submit" id="container__todo__appendBtn" value="➕">
+                <button id="container__todo__randBtn">할 일 추천</button>
+            </form>
+            <div>
+                <div id="container__todo__subtitle">오늘 할 일</div>
+                <ul id="container__todo__list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/config.js"></script>
+</body>
+
+</html>
