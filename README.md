@@ -1,6 +1,6 @@
 # pjoon357.github.io
 
-## 내가 만든 RoDoList
+## 내가 만든 ToDoList
 ### 기능들
 - user이름 설정 및 초기화
 - 시계
