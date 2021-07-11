@@ -45,7 +45,7 @@ const weatherOptions = {
 function onGeoOk(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8c2e23859264b2354dc719b8b0338e80&units=metric`;
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
