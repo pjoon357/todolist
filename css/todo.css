@@ -1,3 +1,63 @@
 .checked {
-    text-decoration: line-through;
+    text-decoration: line-through solid;
+}
+#container__todo__form{
+    display: inline;
+    width: 100%;
+}
+#container__todo__title {
+    font-size: 40px;
+    margin: 25px auto;
+    text-align: center;
+    color: white;
+}
+#container__todo__subtitle{
+    font-size: 35px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+#container__todo__top{
+    border: 2px solid transparent;
+    border-radius: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+#container__todo__input {
+    width: 67%;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    margin: 20px 0;
+    outline: none;
+    padding: 20px;
+    border:none;
+    transition: all 0.2s linear;
+}
+#container__todo__input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+#container__todo__input:focus,
+#container__todo__input:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+#container__todo__appendBtn,
+#container__todo__randBtn{
+    width:12%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+#container__todo__list{
+    width: 100%;
+    background: rgba(255,255,255, 0.5);
+    box-shadow: 0 15px 25px rgba(0,0,0, 0.1);
+    z-index: 1000;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    margin: 0;
+    padding: 0;
 }

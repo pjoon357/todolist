@@ -58,3 +58,6 @@
     padding: 4px 20px;
     margin-right: 30px;
 }
+#top__right__form.hidden {
+    display: none;
+}

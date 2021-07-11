@@ -6,14 +6,11 @@ let condition;
 const weatherOptions = {
     Thunderstorm: {
         icon: `<i class="fas fa-bolt"></i>`,
-        img: []
+        img: ["thunderstorm1.webp", "thunderstorm2.png"]
     },
     Drizzle: {
         icon: `<i class="fas fa-cloud-sun-rain"></i>`,
-        img: [
-            "",
-            ""
-        ]
+        img: ["drizzle1.jpg", "drizzle2.jpg"]
     },
     Rain: {
         icon: `<i class="fas fa-cloud-showers-heavy"></i>`,
@@ -21,24 +18,15 @@ const weatherOptions = {
     },
     Snow: {
         icon: `<i class="far fa-snowflake"></i>`,
-        img: [
-            "",
-            ""
-        ]
+        img: ["snow1.jfif", "snow2.jpg"]
     },
     Atmosphere: {
         icon: `<i class="fas fa-smog"></i>`,
-        img: [
-            "",
-            ""
-        ]
+        img: ["", ""]
     },
     Clear: {
         icon: `<i class="fas fa-sun"></i>`,
-        img: [
-            "",
-            ""
-        ]
+        img: ["clear1.jpg", "clear2.jpg"]
     },
     Clouds: {
         icon: `<i class="fas fa-cloud"></i>`,
@@ -46,17 +34,11 @@ const weatherOptions = {
     },
     Mist: {
         icon: `<i class="fas fa-smog"></i>`,
-        img: [
-            "",
-            ""
-        ]
+        img: ["mist1.jpg", "mist2.jpg"]
     },
     Dust: {
         icon: `<i class="fas fa-smog"></i>`,
-        img: [
-            "",
-            ""
-        ]
+        img: ["dust1.png", "dust2.jpg"]
     }
 }
 

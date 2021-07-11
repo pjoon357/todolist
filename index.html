@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/todo.css" />
     <link rel="stylesheet" href="css/top.css" />
+    <link rel="stylesheet" href="css/clock.css" />
     <title>MyToDo</title>
 </head>
 
@@ -37,16 +38,19 @@
             <span id="container__clock__second"></span>
             <span id="container__clock__ampm"></span>
         </div>
+        <div id="container__todo__title">
+            오늘은 무엇을 할까요?
+        </div>
+        <div class="baseline"></div>
         <div id="container__todo">
-            <div id="container__todo__title">
-                오늘은 무엇을 할까요?
+            <div id="container__todo__top">
+                <form id="container__todo__form">
+                    <input required id="container__todo__input" type="text" placeholder="할 일을 적어주세요.">
+                    <button type="submit" id="container__todo__appendBtn"><i class="fas fa-plus"></i></button>
+                </form>
+                <button id="container__todo__randBtn">랜덤 추천</button>
             </div>
-            <form id="container__todo__form">
-                <input required id="container__todo__input" type="text" placeholder="할 일을 적어주세요.">
-                <input type="submit" id="container__todo__appendBtn" value="➕">
-            </form>
-            <button id="container__todo__randBtn">할 일 추천</button>
-            <div>
+            <div id="container__todo__bottom">
                 <div id="container__todo__subtitle">오늘 할 일</div>
                 <ul id="container__todo__list"></ul>
             </div>
