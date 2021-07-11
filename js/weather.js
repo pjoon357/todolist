@@ -2,33 +2,61 @@ const city = document.querySelector("#top__left__city");
 const temp = document.querySelector("#top__left__temp");
 const weather = document.querySelector("#top__left__weather");
 
+let condition;
 const weatherOptions = {
     Thunderstorm: {
-        icon: "⛈",
+        icon: `<i class="fas fa-bolt"></i>`,
+        img: []
     },
     Drizzle: {
-        icon: "🌦",
+        icon: `<i class="fas fa-cloud-sun-rain"></i>`,
+        img: [
+            "",
+            ""
+        ]
     },
     Rain: {
-        icon: "🌧",
+        icon: `<i class="fas fa-cloud-showers-heavy"></i>`,
+        img: ["rain1.webp", "rain2.jpg"]
     },
     Snow: {
-        icon: "🌨",
+        icon: `<i class="far fa-snowflake"></i>`,
+        img: [
+            "",
+            ""
+        ]
     },
     Atmosphere: {
-        icon: "🌫",
+        icon: `<i class="fas fa-smog"></i>`,
+        img: [
+            "",
+            ""
+        ]
     },
     Clear: {
-        icon: "🌞",
+        icon: `<i class="fas fa-sun"></i>`,
+        img: [
+            "",
+            ""
+        ]
     },
     Clouds: {
-        icon: "☁",
+        icon: `<i class="fas fa-cloud"></i>`,
+        img: ["cloud1.webp", "cloud2.jfif"]
     },
     Mist: {
-        icon: "🌫",
+        icon: `<i class="fas fa-smog"></i>`,
+        img: [
+            "",
+            ""
+        ]
     },
     Dust: {
-        icon: "🌫"
+        icon: `<i class="fas fa-smog"></i>`,
+        img: [
+            "",
+            ""
+        ]
     }
 }
 
@@ -41,7 +69,10 @@ function onGeoOk(position) {
         .then((data) => {
             city.innerText = data.name;
             temp.innerText = `${Math.round(data.main.temp)}℃`;
-            weather.innerText = weatherOptions[data.weather[0].main].icon;
+            condition = data.weather[0].main;
+            weather.innerHTML = weatherOptions[condition].icon;
+            const chosenImage = weatherOptions[condition].img[Math.floor(Math.random() * 2)];
+            document.getElementById("bd").style.backgroundImage = `url("img/${chosenImage}")`;
         });
 }
 function onGeoError() {

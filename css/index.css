@@ -1,3 +1,10 @@
-.hidden {
+body{
+    background-size: cover;
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+#top__right__form.hidden {
     display: none;
 }

@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/562efe63c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/top.css" />
     <title>MyToDo</title>
 </head>
 
-<body>
+<body id="bd">
     <div id="top">
         <div id="top__left">
             <span id="top__left__city"></span>
@@ -17,10 +20,10 @@
             <span id="top__left__weather"></span>
         </div>
         <div id="top__right">
-            <span id="top__right__label">이름을 등록해주세요. 👉</span>
+            <span id="top__right__label">이름을 입력해주세요. -></span>
             <form id="top__right__form">
                 <input required type="text" id="top__right__inputnm">
-                <input type="submit" id="top__right__loginBtn" value="확인" />
+                <input type="submit" id="top__right__loginBtn" value="입력" />
             </form>
             <button id="top__right__resetBtn" class="hidden">초기화</button>
         </div>
@@ -28,7 +31,9 @@
     <div id="container">
         <div id="container__clock">
             <span id="container__clock__hour"></span>
+            <span class="dot">:</span>
             <span id="container__clock__minute"></span>
+            <span class="dot">:</span>
             <span id="container__clock__second"></span>
             <span id="container__clock__ampm"></span>
         </div>
@@ -37,10 +42,10 @@
                 오늘은 무엇을 할까요?
             </div>
             <form id="container__todo__form">
-                <input id="container__todo__input" type="text" placeholder="할 일을 적어주세요.">
+                <input required id="container__todo__input" type="text" placeholder="할 일을 적어주세요.">
                 <input type="submit" id="container__todo__appendBtn" value="➕">
-                <button id="container__todo__randBtn">할 일 추천</button>
             </form>
+            <button id="container__todo__randBtn">할 일 추천</button>
             <div>
                 <div id="container__todo__subtitle">오늘 할 일</div>
                 <ul id="container__todo__list"></ul>
@@ -50,6 +55,7 @@
     <script src="js/clcok.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
     <script src="js/config.js"></script>
 </body>
 

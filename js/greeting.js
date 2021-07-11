@@ -18,7 +18,7 @@ function onLoginSubmit(event) {
 function clickResetBtn(event) {
     event.preventDefault();
     localStorage.removeItem(USERNAME_KEY);
-    greeting.innerText = "이름을 등록해주세요. 👉";
+    greeting.innerText = "이름을 입력해주세요. ->";
     loginInput.value = "";
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     resetBtn.classList.add(HIDDEN_CLASSNAME);
